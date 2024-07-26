@@ -31,7 +31,6 @@ const Form = () => {
                 <input {...register('username')} type="text" 
                         placeholder='Username' required />
                 <p>{errors.username?.message}</p>
-                
             </div>
 
             <div className='field'>
@@ -40,16 +39,14 @@ const Form = () => {
                 <input {...register('email')} type="email" 
                         placeholder='Email' required />
                 <p>{errors.email?.message}</p>
-                <br />
             </div>
             
             <div className='field'>
-            <label>Password</label>
+                <label>Password</label>
                 <br />
                 <input {...register('password')} type="password" 
                         placeholder='Password' required />
                 <p>{errors.password?.message}</p>        
-                <br />
             </div>
             
 
